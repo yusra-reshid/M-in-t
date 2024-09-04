@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ይመዝገቡ</title>
+    <link rel="stylesheet" href="Sign-Up.css">
+    <script src="https://kit.fontawesome.com/c38ee625c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="primary">
+        <nav class="header">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <A href="ሚንት.html"><img class="logo" src="MinT logo.png" alt="MinT logo" ></A>
+            <ul class="link">
+                <li ><a class="home" href="ሚንት.html">መነሻ ገጽ</a></li>
+                <li><a href="አባውት.html">ስለ እኛ</a></li>
+                <li><div class="dropdown"><button class="dropbtn"><i class="fa-solid fa-globe"></i>  <i class="fa-solid fa-circle-chevron-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="Sign-Up.html">English</a>
+                    </div>
+                </div></li>
+                <li><button class="primary-btn">ይመዝገቡ</button></li>
+             </ul>
+        </nav>
+    </div>
+    <div class="reg-part">
+        <div class="registration-form">
+            <h2>ይመዝገቡ</h2>
+            <p class="form-para">መለያ አለዎት? <a href="ግባ.html" class="in">ግባ</a></p>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="name">ስም</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">ኢሜይል</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">የይለፍ ቃል</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">የይለፍ ቃል ያረጋግጡ</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">ምድብ</label>
+                    <select id="category" name="category" required>
+                        <option value="technology">ሶፍትዌር</option>
+                        <option value="innovation">ኢ-ኮሜርስ</option>
+                        <option value="startup">ማማከር</option>
+                        <option value="startup">መሠረተ ልማት</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="details">ዝርዝር መረጃ</label>
+                    <textarea id="details" name="details" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="product">ምርት</label>
+                    <input type="text" id="product" name="product" required>
+                </div>
+                <button type="submit">ይመዝገቡ</button>
+                <div id="notification" class="notification">
+                    Registration successful!
+                </div>
+            </form>
+        </div>
+        <div>
+            <img src="sign up.png" class="reg-img">
+        </div>
+
+    </div>
+    
+
+    <footer class="contact-us">
+        <div class="contact-us-content">
+           <section class="info">
+            <a href="ሚንት.html"><img src="MinT logo.png" alt="" class="logo"></a>
+            <footer class="footer-icons">
+                <a href="https://www.linkedin.com/company/ministry-of-innovation-and-technology-ethiopia/" target="_blank"<i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/@MinistryofInnovationandTechnol" target="_blank"<i class="fa-brands fa-youtube"></i></a>            
+                <a href="https://www.facebook.com/MInT.Ethiopia" target="_blank"<i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.contact@mint.gov.et" target="_blank"<i class="fa-solid fa-envelope"></i></a>      
+            </footer>
+         </section>
+         <section class="info">
+            <h3>ጠቃሚ አገናኞች</h3>
+            <a href="https://council.science/member/ethiopia-ministry-innovation-technology/" target="_blank">ዓለም አቀፍ የሳይንስ ምክር ቤት</a><br>
+            <a href="https://www.ictcod.gov.et/register" target="_blank">ሚንት</a><br>
+            <a href="https://maps.app.goo.gl/pGXCDDRLoYKFJXnz6v" target="_blank">መገኛ ቦታ</a>
+         </section>
+         <section class="info">
+            <h3>የመገናኛ መረጃ</h3>
+            <p>amdetsion.ambachew@mint.gov.et</p>
+            <p>+251912736731</p>
+            <p>አዲስ አበባ፣ ኢትዮጵያ</p>
+         </section>
+        </div>
+    </footer>
+    <script src="sign-up.js"></script>    
+</body>
+</html>

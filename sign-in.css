@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+.primary{
+    background: linear-gradient(170deg, #0033A0, #FF6600);
+    padding: 1% 0;
+}
+.header{
+    width: 80%;
+    margin: auto ;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 80px;
+    border-radius:10% ;
+    margin-top: 20px;
+}
+.link{
+    display: flex;
+    gap: 2rem;
+    font-size: 20px;
+}
+.link a{
+    color: white;
+    transition: .4s ease;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.dropdown-content a{
+    display: block;
+    padding: 12px 16px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.primary-btn,.dropbtn, .send-btn{
+    background-color: #FFA726;
+    background: linear-gradient(135deg, #0033A0, #FF6600);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .4s ease;
+}
+ a:hover{
+    color: #FFA726;
+}
+.primary-btn:hover{
+    color: #FFA726;
+    background: linear-gradient(135deg, white, white);
+    transition: .7s ease;
+}
+.checkbtn{
+    font-size: 30px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+#check{
+    display: none;
+    float: right;
+}
+.reg-part{
+    display: flex;
+    align-items: center;
+}
+.signin-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 50%;
+    font-family: Arial, sans-serif;
+    margin: 5% auto;
+}
+.signin-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+.in{
+    color: rgb(125, 151, 245);
+}
+.form-para{
+    text-align: center;
+    padding: 1rem 0;
+}
+.signin-form .form-group {
+    margin-bottom: 15px;
+}
+.signin-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+.signin-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.signin-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.signin-form button:hover {
+    background-color: #0056b3;
+}
+.reg-img{
+    height: 400px;
+}
+.contact-us{
+    background: linear-gradient(170deg, #0033A0, #FF6600);
+    padding: 50px 0;
+    color: white;
+}
+.contact-us-content{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info{
+   line-height: 2.5;
+}
+.info a{
+    color: white;
+}
+.info a:hover{
+    transition: .4s ease;
+    color: #FFA726;
+}
+.footer-icons a{
+   margin-right: 20px;
+}
+@media(max-width:660px){
+    .header{
+        display: block;
+    }
+    .logo{
+        z-index: 2;
+        position: relative;
+        margin-left: 20px;
+        font-size: 25px;
+    }
+    .checkbtn{
+    display: block;
+    z-index: 2;
+    position: relative;
+    font-size: 40px;
+    margin-top: 30px;
+    }
+    .link{
+        height: 0px;
+        left: 0; 
+        text-align: center;
+        transition: transform .5s;
+        transform: translateY(-100%);
+        overflow: hidden;
+    }
+    #check:checked ~ .link{
+        transform: translateY(0%); 
+        padding-top: 80px;
+        padding-bottom: 60px;
+        border-bottom-right-radius: 25%;
+        position: fixed;
+        width: 100%;
+        flex-direction: column;
+        background: linear-gradient(170deg, #0033A0, #FF6600);
+        gap: 5rem; 
+        font-size: 18px;
+        top: 0;
+        height: 100%;
+        left: 0;
+    }
+    .primary-btn:hover{
+        background-color: #FFA726;
+        color: white;
+    }
+    .contact-us-content, .secondary-boxes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 2rem;
+    }
+    .secondary-boxes{
+        width: 30%;
+    }
+    .reg-img{
+        display: none;
+    }
+}

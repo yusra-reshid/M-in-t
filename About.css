@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.primary{
+    background:rgba(0, 0, 0, 0.4) url(About\ prm.jpg);
+    background-blend-mode: darken;
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    margin-bottom: 40px;
+}
+.header{
+    width: 80%;
+    margin: auto ;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 80px;
+    border-radius:10% ;
+    margin-top: 20px;
+}
+.link{
+    display: flex;
+    gap: 2rem;
+    font-size: 20px;
+}
+.link a{
+    color: white;
+    transition: .4s ease;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.dropdown-content a{
+    display: block;
+    padding: 12px 16px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.primary-btn,.dropbtn, .send-btn{
+    background-color: #FFA726;
+    background: linear-gradient(170deg, #0033A0, #FF6600);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .4s ease;
+}
+ a:hover{
+    color: #FFA726;
+}
+.primary-btn:hover{
+    color: #FFA726;
+    background: linear-gradient(135deg, white, white);
+    transition: .7s ease;
+}
+.checkbtn{
+    font-size: 30px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+#check{
+    display: none;
+    float: right;
+}
+.prm-content{
+    width: 80%;
+    margin: auto;   
+}
+.about-us{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    font-weight: bolder;
+    font-size: 60px;
+    background: linear-gradient(135deg, #0033A0, #FF6600);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.second-page{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 80%;
+    margin: auto ;
+    height: 50%;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+ .second-page-content{
+    width: 70%;
+}
+.about{
+    text-align: center;
+    font-size: 30px;
+    margin: 0 0 30px 0;
+    background: linear-gradient(170deg, #124bc7, #FF6600);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+.about-para{
+    line-height: 1.6;
+    text-align: justify;
+}
+.teritiary-page{
+    background-image: url(vision.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: top;
+    height: 50vh;
+    margin: 40px 0;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    line-height: 2;
+}
+.quaternary-page{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 7% 0;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 2rem;
+}
+.top{
+    margin: 20% 0;
+}
+.vision{
+    background: linear-gradient(170deg, #124bc7, #FF6600);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size:200%;
+}
+.contact-us{
+    background: linear-gradient(170deg, #0033A0, #FF6600);
+    padding: 50px 0;
+    color: white;
+}
+.contact-us-content{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info{
+   line-height: 2.5;
+}
+.info a{
+    color:white;
+}
+.footer-icons a{
+   margin-right: 20px;
+}
+.info a:hover{
+    transition: .4s ease;
+    color: #FFA726;
+}
+
+@media(max-width:900px){
+    .header{
+        display: block;
+    }
+    .logo{
+        z-index: 2;
+        position: relative;
+        margin-left: 20px;
+        font-size: 25px;
+    }
+    .checkbtn{
+    display: block;
+    z-index: 2;
+    position: relative;
+    font-size: 40px;
+    margin-top: 30px;
+    }
+    .link{
+        height: 0px;
+        left: 0; 
+        text-align: center;
+        transition: transform .5s;
+        transform: translateY(-100%);
+        overflow: hidden;
+    }
+    #check:checked ~ .link{
+        transform: translateY(0%); 
+        padding-top: 80px;
+        padding-bottom: 60px;
+        border-bottom-right-radius: 25%;
+        position: absolute;
+        width: 100%;
+        flex-direction: column;
+        background: linear-gradient(170deg, #0033A0, #FF6600);
+        gap: 5rem; 
+        font-size: 18px;
+        top: 0;
+        height: 100%;
+        left: 0;
+    }
+    
+    .primary-btn:hover{
+        background-color: #FFA726;
+        color: white;
+    }
+    .quaternary-page{
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+    .contact-us-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 2rem;
+    }
+}
